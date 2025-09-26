@@ -1,0 +1,14 @@
+{
+  "project_name": "hello-world",
+  "version_file": "VERSION",
+  "platforms_file": "platforms.txt",
+  "default_ldflags": "-s -w",
+  "default_build_flags": "-trimpath",
+  "targets": [
+    {
+      "name": "hello-world",
+      "path": ".",
+      "output_name": "hello-world"
+    }
+  ]
+}
