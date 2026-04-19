@@ -2,6 +2,9 @@ all: clean
 	go-xbuild-go -config build-config.json
 	/bin/ls -ltr ./bin
 
+release:
+	go-build-go -release
+
 build: clean
 	go build .
 
