@@ -5,38 +5,35 @@
 class HelloWorld < Formula
   desc ""
   homepage "https://github.com/muquit/hello-world"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/muquit/hello-world/releases/download/v1.0.3/hello-world-v1.0.3-darwin-arm64.d.tar.gz"
-    sha256 "3cd780885286043586e62d85520a1b59bff87700d936b2ae87281556a9f4c381"
-  end
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/muquit/hello-world/releases/download/v1.0.3/hello-world-v1.0.3-darwin-amd64.d.tar.gz"
-    sha256 "14a05d3caa48136c43683725d6f1bdb9a84ed1fde148400f4c6261af61fa1e89"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/muquit/hello-world/releases/download/v1.0.3/hello-world-v1.0.3-linux-amd64.d.tar.gz"
-    sha256 "cdfcabf1505b42fdd338d856b2e2a91b3a812f5c7fb8345a03b4dc466ce077de"
-  end
-  if OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/muquit/hello-world/releases/download/v1.0.3/hello-world-v1.0.3-linux-arm64.d.tar.gz"
-    sha256 "bb36526f937c5f88728fcf8bb4dae52b745477016d2e7eb3bd082769775435d4"
+    url "https://github.com/muquit/hello-world/releases/download/v1.0.4/hello-world-v1.0.4-darwin-arm64.d.tar.gz"
+    sha256 "4eddd9c33a05f91a28d708693fead907523ca2305aeb5897bdbfe88744eb6047"
+  elsif OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/muquit/hello-world/releases/download/v1.0.4/hello-world-v1.0.4-darwin-amd64.d.tar.gz"
+    sha256 "790b28c2ca4ac5d9f5887a3e259daed00ffdc88636ae84906b65697cb481349e"
+  elsif OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/muquit/hello-world/releases/download/v1.0.4/hello-world-v1.0.4-linux-amd64.d.tar.gz"
+    sha256 "749563de07a076986a722b7b51036ffe92a2c2521575d89789cd977b45ebc8a1"
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/muquit/hello-world/releases/download/v1.0.4/hello-world-v1.0.4-linux-arm64.d.tar.gz"
+    sha256 "f56a3882ca791964786f6cd6e8a1c5b4d6f309d87c92139f521b34061cb7a743"
   end
 
   def install
     if OS.mac?
       if Hardware::CPU.arm?
-        bin.install "hello-world-v1.0.3-darwin-arm64" => "hello-world"
+        bin.install "hello-world-#{version}-darwin-arm64" => "hello-world"
       else
-        bin.install "hello-world-v1.0.3-darwin-amd64" => "hello-world"
+        bin.install "hello-world-#{version}-darwin-amd64" => "hello-world"
       end
     elsif OS.linux?
       if Hardware::CPU.arm?
-        bin.install "hello-world-v1.0.3-linux-arm64" => "hello-world"
+        bin.install "hello-world-#{version}-linux-arm64" => "hello-world"
       else
-        bin.install "hello-world-v1.0.3-linux-amd64" => "hello-world"
+        bin.install "hello-world-#{version}-linux-amd64" => "hello-world"
       end
     end
   end
