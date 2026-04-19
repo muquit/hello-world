@@ -8,7 +8,7 @@ Homebrew maps muquit/hello-world to https://github.com/muquit/hello-world
 and looks for formulas in the Formula/ directory automatically.
 
 ```
-brew tap muquit/hello-world
+brew tap muquit/hello-world https://github.com/muquit/hello-world
 brew install hello-world
 ```
 
