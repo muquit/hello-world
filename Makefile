@@ -3,7 +3,7 @@ all: clean
 	/bin/ls -ltr ./bin
 
 release:
-	go-build-go -release
+	go-xbuild-go -release
 
 build: clean
 	go build .
