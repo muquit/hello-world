@@ -1,6 +1,6 @@
-Release v1.0.1
+Release v1.0.2
 
-This is a test
+This is a test of brew formula generated with go-xbuild-go v1.0.9
 
 --
-Sep-25-2025 
+Apr-19-2026 
