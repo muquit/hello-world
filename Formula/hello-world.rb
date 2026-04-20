@@ -10,16 +10,16 @@ class HelloWorld < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/muquit/hello-world/releases/download/v1.0.5/hello-world-v1.0.5-darwin-arm64.d.tar.gz"
-    sha256 "7cfd749830f819fe5118edacc353c5e036348be13acc0a467885f4cf70c6cc8f"
+    sha256 "85978735fb5e1624d1e65a406137032aaa56ced65ed0b27ab8dd5e8ea343446a"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/muquit/hello-world/releases/download/v1.0.5/hello-world-v1.0.5-darwin-amd64.d.tar.gz"
-    sha256 "22dca48907ebc6e9425dc2528e4914fe3ec553260723661f8af4feed0315a4b6"
+    sha256 "139e0e483ce4d78a022486c1c5652b35887d25865f3805bc33ad529ebe138336"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/muquit/hello-world/releases/download/v1.0.5/hello-world-v1.0.5-linux-amd64.d.tar.gz"
-    sha256 "5aa9d44bc30a0f7ea4e4e58640cdffe9641064b82b76fd6e2d9e73f2db904eb0"
+    sha256 "9ffc22138d673b773651a3140fe877830a0d80bbebda6a15cb4e1cb195577fd5"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/muquit/hello-world/releases/download/v1.0.5/hello-world-v1.0.5-linux-arm64.d.tar.gz"
-    sha256 "bde38cd124def52eccfd0a0d0b298d5cc1189df0cb914fa9f47664af2059e99d"
+    sha256 "f5185c767182f91d6e91af4239b1e7621b7fbd4d44d36577560657bc706c1788"
   end
 
   def install

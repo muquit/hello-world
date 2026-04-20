@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/muquit/hello-world/pkg/version"
+)
 
 func main() {
-	fmt.Println("hello, world!")
+	fmt.Printf("hell-world %s\n", version.Get());
 }
